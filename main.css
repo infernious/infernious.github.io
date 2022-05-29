@@ -1,0 +1,45 @@
+h1 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px
+}
+
+h2 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px
+}
+
+p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    max-width: 75%;
+  }
+
+ul {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    max-width: 75%;
+}
+
+li {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-align: justify;
+  max-width: 75%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
