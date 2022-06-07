@@ -3,19 +3,19 @@
 
     <head>
 
-        <! css >
+        <!-- css -->
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-        
-        <! font >
+                
+        <!-- font --> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-        
-        <! mathjax >
+                
+        <!-- mathjax -->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-        <! favicon >
+        
+        <!-- favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -33,27 +33,45 @@
     <body>
 
         <ul class="menu horizontal">
-            <li class="menu horizontal"><a href="index.html">home</a></li>
+            <li class="menu horizontal"><a href="https://fernclass.com/">home</a></li>
         </ul>
 
-        <div class="center"> <! force >
+        <div class="center"> <!-- force -->
         
             <h1>force</h1>
 
             <p>
-                A force is a push or pull. Pretty simple. If I pull on a crate, I am exerting a force on that crate. If molecule A repels (or "pushes") molecule B, molecule A exerts a force on molecule B. Mathematically, force can be positive or negative. According to the conventions of a bunch of old (dead) men, a positive force is repulsive, and a negative force is attractive. The units for force are Newtons, which may sound familar from the dude who came up with a few laws dealing with force. Here's one of them: \[F = ma\]
+                Position is the distance of something from a chosen point of reference. Displacement is the change from initial to final position. Velocity is the rate of change of displacement with respect to time. Acceleration is the rate of change of velocity with respect to time. 
             </p>
 
-            <ul>
-                <li>\(F =\) force</li>
-                <li>\(m =\) mass</li>
-                <li>\(a =\) acceleration</li>
-            </ul>
-
-            <p>You should know that the unit for mass is kilograms and that for acceleration is meters per second squared. If we multiply the two to get force, the unit of force is also kg m s<sup>-2</sup>, which is equivalent to Newtons.</p> 
+            <p>
+                A force is a push or pull. Pretty simple. If I pull on a crate, I am exerting a force on that crate. If molecule A repels molecule B, molecule A exerts a force on molecule B. Mathematically, force can be positive or negative. A positive force points in the positive direction and a negative force points in the negative direction. We’ll talk about these directions in the context of an atom later. Because force has both direction and magnitude, we call it a vector. The net force acting on something is basically the vector sum of all the forces that act on it. A vector sum differs from a regular sum in that we add according to the directions. 
+            </p>
 
             <p>
-                The main type of force that we deal with in chemistry is the electrostatic force, or the force that exists between stationary charges. The electrostatic force between two point charges is expressed in Coulomb’s Law: \[F = k \frac{q_1 q_2}{r^2}\] 
+                Newton discovered a bunch of things about forces. He came up with three laws. 
+            </p>
+
+            <ol>
+                <li>
+                    Something at rest will remain resting and something moving (at constant velocity) will remain moving (with the same constant velocity) unless a net external force acts on it. 
+                </li>
+
+                <li>
+                    \(F = ma\)
+                </li>
+
+                <li>
+                    For every force, there’s an equal (in magnitude) and opposite (in direction) force.
+                </li>
+            </ol>
+
+            <p>
+                The units for force are Newtons. From Newton’s second law, we know that this is equivalent to kg m s<sup>-2</sup> . 
+            </p>
+
+            <p>
+                The main type of force that we deal with in chemistry is the electrostatic force, or the force that exists between stationary charges. The electrostatic force between two point charges is expressed in Coulomb’s Law: \[ F = k \frac{q_1 q_2}{r^2} \]
             </p>
             
             <ul>
@@ -89,11 +107,15 @@
             <h1>energy</h1>
 
             <p>
-                Anyways, being forced to move on, energy is the ability to do work. Well what’s work? Work is the transfer of energy… Pretty self-referential. We’ll talk more about work later on, but for now, energy. How do we define energy without using work? A very simple definition is the capacity for change, especially in the context of chemistry. Let’s take gravity!  
+                Anyways, being forced to move on, energy is the capacity for change, especially in the context of chemistry. 
             </p>
 
             <p>
-                work-in-progress
+                We usually talk about two types of energy: kinetic and potential. Potential energy is the energy something has based on how it’s arranged or configured. Let’s take gravity! Objects on Earth have a specific energy associated with them due to being in Earth’s gravitational field. We represent this using the equation \[U_g = mgh. \] Where you starting measuring height (i.e., where \(h=0\)) is arbitrary and up to you. From this equation, we see that a higher height results in more energy. Hopefully this makes sense. The higher something is, the more its speed can change if it falls (and consequently, the more you’ll get hurt if it hits your head). 
+            </p>
+
+            <p>
+                Kinetic energy is the energy associated with moving. Something has energy when it moves with some velocity. \[K = \frac{1}{2}mv^2\] A higher velocity means that you have higher kinetic energy. Temperature is a measure of the average kinetic energy of something. Whatever you’re taking the temperature of (probably) is made up of molecules. Molecules made up of atoms. Each atom with their own kinetic energy from vibrating and moving around a bit. The “average” here is the average across all these little atoms. So, a higher temperature means that the constituent molecules/atoms have more kinetic energy associated with vibration/motion. In other words, they move around faster. 
             </p>
             
         </div>
