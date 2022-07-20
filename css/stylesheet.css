@@ -60,7 +60,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: #d6361c;
+background-color: #ff3013;
 max-width: 100%;
 }
 
@@ -77,5 +77,25 @@ text-decoration: none;
 }
 
 li.menu.horizontal a:hover{
-background-color: #b52500
+background-color: #ff3013;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+div.float p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: block;
+  color: black;
+  float: right;
+  margin-right: -16%;
+  width: 30%;
+  border: 2px solid #ff3013;
+  border-left: 6px solid #ff3013;
+  border-radius: 6px;
 }
