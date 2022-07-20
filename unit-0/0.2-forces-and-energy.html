@@ -23,33 +23,29 @@
         <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#d6361c">
         <meta name="msapplication-TileColor" content="#d6361c">
         <meta name="theme-color" content="#ffffff">
+
+        <script src="../js/header.js" type="text/javascript" defer></script>
         
         <title>
-            0.1 forces and energy
+            0.2 forces and energy
         </title>
 
     </head>
 
     <body>
 
-        <ul class="menu horizontal">
-            <li class="menu horizontal"><a href="https://fernclass.com/">home</a></li>
-        </ul>
+        <main-header></main-header>
 
         <div class="center"> <!-- force -->
         
             <h1>force</h1>
 
             <p>
-                Position is the distance of something from a chosen point of reference. Displacement is the change from initial to final position. Velocity is the rate of change of displacement with respect to time. Acceleration is the rate of change of velocity with respect to time. 
+                A force is a push or pull. If I pull on a crate, I am exerting a force on that crate. If molecule A repels molecule B, molecule A exerts a force on molecule B. Because force has both direction and magnitude, it is a vector. The net force acting on something is the vector sum of all the forces that act on it.
             </p>
 
             <p>
-                A force is a push or pull. Pretty simple. If I pull on a crate, I am exerting a force on that crate. If molecule A repels molecule B, molecule A exerts a force on molecule B. Mathematically, force can be positive or negative. A positive force points in the positive direction and a negative force points in the negative direction. We’ll talk about these directions in the context of an atom later. Because force has both direction and magnitude, we call it a vector. The net force acting on something is basically the vector sum of all the forces that act on it. A vector sum differs from a regular sum in that we add according to the directions. 
-            </p>
-
-            <p>
-                Newton discovered a bunch of things about forces. He came up with three laws. 
+                Newton discovered a bunch of things about forces. He came up with three laws: 
             </p>
 
             <ol>
@@ -58,12 +54,12 @@
                 </li>
 
                 <li>
-                    \(F = ma\)
+                    \(\sum F = ma\)
 
                     <ul>
-                        <li>\(F =\) force</li>
-                        <li>\(m =\) mass</li>
-                        <li>\(a =\) acceleration</li>
+                        <li>\(\sum F =\) net force \((\mathrm{Newtons, ~ N})\)</li>
+                        <li>\(m =\) mass \((\mathrm{kilograms, ~ kg})\)</li>
+                        <li>\(a =\) acceleration \((\mathrm{m ~ s^{-2}})\)</li>
                     </ul>
 
                 </li>
@@ -82,30 +78,35 @@
             </p>
             
             <ul>
-                <li>\(F =\) force</li>
+                <li>\(F =\) force \((\mathrm{Newtons, ~ N})\)</li>
                 <li>\(k = 9 \cdot 10^{9} \mathrm{~ N ~ m^2 ~ C^{-2}} = \) Coulomb's constant</li>
-                <li>\(q_1 =\) charge of one point charge</li>
-                <li>\(q_1 =\) charge of the other point charge</li>
-                <li>\(r =\) distance between the two point charges</li>
+                <li>\(q_1 =\) charge of one point charge \((\mathrm{Coulombs, ~ C})\)</li>
+                <li>\(q_2 =\) charge of the other point charge \((\mathrm{Coulombs, ~ C})\)</li>
+                <li>\(r =\) distance between the two point charges \((\mathrm{meter, ~ m})\)</li>
             </ul>
 
             <p>
-                This equation is pretty important and will be referenced a bunch of times later on. Memorize it. It tells us a few pretty important things that we can apply to atoms: 
+                This equation is pretty important and will be referenced a bunch of times later on. It tells us a few pretty important things that we can apply to atoms:
             </p>
 
             <ul>
-                <li>More charge = more force. Basically, using charges of higher magnitudes results in a force of a higher magnitude as well. Force and charge (of each point charge) is directly proportional.</li> 
-                <li>Less distance = more force. In other words, the closer the two charges are, the greater the force between them is. We see that decreasing distance in the equation lowers the value of the denominator, resulting in a greater magnitude.</li>
-                <li>Forces between two like-charges are repulsive. Let’s examine this using cases: 
-                    <ul class="nested"> 
-                        <li>Case 1: We have two positive charges. Multiplying \(q_1\) and \(q_2\) together results in a positive number since both are positive. Thus, force is also positive since neither Coulomb’s constant or the distance are negative.</li>
-                        <li>Case 2: We have two negative charges. Multiplying \(q_1\) and \(q_2\) still results in a positive number because negative times negative is positive. Same as before, force is positive. 
-                        </li> 
-                    </ul>
-                    This is pretty important as we’ll see in the next section. Remember it. 
-                </li>
-                <li>Forces between two unlike charges are attractive. This time when we multiply \(q_1\) by \(q_2\), we get a negative number, so force is negative as well. Also important. </li>
+                <li>More charge \(\to\) more force. Basically, using charges of higher magnitudes results in a force of a higher magnitude as well. Force and charge (of each point charge) are directly proportional.</li> 
+                <li>Less distance \(\to\) more force. In other words, the closer the two charges are, the greater the force between them is. We see that decreasing distance in the equation lowers the value of the denominator, resulting in a greater magnitude.</li>
             </ul>
+
+            <div class="float">
+                <p>
+                    The reason for this is unfortunately something that dives deep into quantum field theory. Hopefully the analogy to magnets makes it easier to believe.
+                </p>
+            </div>
+
+            <p>
+                Additionally, like charges (positive-positive or negative-negative) are repulsive, and unlike charges (positive-negative) are attractive. Magnets hold a similar property as well. Magnets repel when you try holding two of the same poles together (north-north or south-south) and attract if you hold opposite poles together (north-south).  Force is represented in the picture below through the vector arrows.  
+            </p>
+
+            <div style="text-align: center; max-width: 80%;">
+                <img src="images/0.2.1.png" alt="vector subtraction" width=75%>
+            </div>
 
         </div>
 
@@ -122,9 +123,10 @@
             </p>
 
                 <ul>
-                    <li>\(U_g = \) gravitational potential energy</li>
-                    <li>\(m = \) mass</li>
+                    <li>\(U_g = \) gravitational potential energy \((\mathrm{Joules, ~ J})\)</li>
+                    <li>\(m = \) mass \((\mathrm{kilograms, ~ kg})\)</li>
                     <li>\(g = 9.81 \mathrm{~ m ~ s^{-2}} = \) gravitational acceleration</li>
+                    <li>\(h =\) height \((\mathrm{meter, ~ m})\)</li> 
                 </ul>
 
             <p>
@@ -136,21 +138,31 @@
             </p>
                
                 <ul>
-                    <li>\(K = \) kinetic energy</li>
-                    <li>\(m = \) mass</li>
-                    <li>\(v = \) velocity</li>
+                    <li>\(K = \) kinetic energy \((\mathrm{Joules, ~ J})\)</li>
+                    <li>\(m = \) mass \((\mathrm{kilograms, ~ kg})\)</li>
+                    <li>\(v = \) velocity \((\mathrm{m ~ s^{-1}})\)</li>
                 </ul>
 
             <p>
                 A higher velocity means that you have higher kinetic energy. Temperature is a measure of the average kinetic energy of something. Whatever you’re taking the temperature of (probably) is made up of molecules. Molecules made up of atoms. Each atom with their own kinetic energy from vibrating and moving around a bit. The “average” here is the average across all these little atoms. So, a higher temperature means that the constituent molecules and atoms have more kinetic energy associated with vibration and motion. In other words, they move around faster. 
             </p>
 
+            <div class="float">
+                <p>
+                    Brackets are sometimes used to denote units and figure out how they might simplify.
+                </p>
+            </div>
+
             <p>
-                Let's look at the units of energy. The SI units are joules. From looking at the two equations for potential energy, we see that this is equivalent to \[\mathrm{energy} = [\mathrm{kg}][\mathrm{m ~ s^{-2}}][\mathrm{m}].\] For kinetic energy, \[\mathrm{energy} = [\mathrm{kg}][\mathrm{m ~ s^{-1}}]^2.\] From these two, we see that energy generally simplifies into \(\mathrm{kg ~ m^2 ~ s^{-2}}\). This is equivalent to Joules (\(\mathrm{J}\)), which is the SI unit for energy.
+                Let's look at the units of energy. The SI units are joules. From looking at the two equations for potential energy, we see that this is equivalent to \[\mathrm{energy} = [\mathrm{kg}][\mathrm{m ~ s^{-2}}][\mathrm{m}].\]  
             </p>
 
             <p>
-                Note: brackets are used (like above) to write down units and to figure out how they work in an equation. Also, don't actively memorize what units Joules are equal to. Knowing that they are the units for energy, figure it out using the equations. Look at what we did above and fill in the rest of the math!
+                For kinetic energy, \[\mathrm{energy} = [\mathrm{kg}][\mathrm{m ~ s^{-1}}]^2.\] From these two, we see that energy generally simplifies into \(\mathrm{kg ~ m^2 ~ s^{-2}}\). This is equivalent to Joules (\(\mathrm{J}\)), which is the SI unit for energy.
+            </p>
+
+            <p>
+                Don't actively memorize what units Joules are equal to. Knowing that they are the units for energy, figure it out using the equations. Look at what we did above and fill in the rest of the math!
             </p>
             
         </div>
